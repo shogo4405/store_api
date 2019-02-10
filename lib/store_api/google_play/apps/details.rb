@@ -23,6 +23,7 @@ module StoreApi
           params = {'id' => id }
           if !lang.nil?
             params['hl'] = lang
+            params['gl'] = 'jp'
           end
           begin
             html = get(StoreApi::GooglePlay::HOST,@@path,params,StoreApi::GooglePlay::HTTPS,proxy,header)

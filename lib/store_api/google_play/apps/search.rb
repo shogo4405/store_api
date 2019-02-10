@@ -14,6 +14,7 @@ module StoreApi
           params = {'q' => search_word,'c' => 'apps' }
           if !lang.nil?
             params['hl'] = lang
+            params['gl'] = 'jp'
           end
           @@path = URI.escape("/store/search")
           @search_list = []

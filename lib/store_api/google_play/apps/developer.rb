@@ -14,6 +14,7 @@ module StoreApi
           params = {'id' => developer_name }
           if !lang.nil?
             params['hl'] = lang
+            params['gl'] = 'jp'
           end
           @@path = URI.escape("/store/apps/developer")
           @apps_list = []

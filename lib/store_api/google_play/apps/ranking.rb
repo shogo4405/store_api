@@ -25,6 +25,7 @@ module StoreApi
           params = {}
           if !lang.nil?
             params['hl'] = lang
+            params['gl'] = 'jp'
           end
           if category_id.nil?
             @@path = "/store/apps/collection/#{ranking_type}"
